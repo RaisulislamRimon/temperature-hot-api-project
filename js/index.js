@@ -1,6 +1,6 @@
 const searchBtn = document.getElementById("search-btn");
 const searchInput = document.getElementById("search-input");
-const apiKey = `e2cc60d2cacfaa6477be706f45f89d38`;
+const apiKey = `fb60bf5f1859a5113bb163c7950e2b55`;
 
 searchBtn.addEventListener("click", () => {
   const searchValue = searchInput.value;
