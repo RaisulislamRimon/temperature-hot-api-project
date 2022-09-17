@@ -6,7 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Weather Temperature With API</title>
     <!-- favicon -->
-    <link rel="shortcut icon" href="https://placeimg.com/400/400/arch" type="image/x-icon">
+    <link
+      rel="shortcut icon"
+      href="https://placeimg.com/400/400/arch"
+      type="image/x-icon"
+    />
     <!-- daisy ui & tailwind css -->
     <link
       href="https://cdn.jsdelivr.net/npm/daisyui@2.24.0/dist/full.css"
@@ -158,13 +162,19 @@
       <!-- Temperature output section  -->
       <section class="mt-10 mb-28">
         <div class="flex items-center justify-center">
-          <div class="card lg:card-side bg-base-100 shadow-xl">
+          <div
+            id="weather-card"
+            class="card lg:card-side bg-base-100 shadow-xl"
+          >
+            <!-- weatherCard contents here from index.js/api call dynamically -->
             <figure>
-              <img src="https://placeimg.com/400/400/arch" alt="Album" />
+              <!-- <img id="weather-img" src="https://placeimg.com/400/400/arch" alt="Album" /> -->
             </figure>
             <div class="card-body">
-              <h2 class="card-title">New album is released!</h2>
-              <p>Click the button to listen on Spotify app.</p>
+              <h2 class="card-title">
+                City/Country name : <span id="city-name"></span>
+              </h2>
+              <h3>Temperature : <span id="temperature"></span></h3>
               <div class="card-actions justify-end">
                 <button class="btn btn-primary">Listen</button>
               </div>
