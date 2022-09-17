@@ -5,6 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Weather Temperature With API</title>
+    <!-- favicon -->
+    <link rel="shortcut icon" href="https://placeimg.com/400/400/arch" type="image/x-icon">
     <!-- daisy ui & tailwind css -->
     <link
       href="https://cdn.jsdelivr.net/npm/daisyui@2.24.0/dist/full.css"
@@ -127,11 +129,12 @@
           <div class="form-control">
             <div class="input-group w-52 mx-auto">
               <input
+                id="search-input"
                 type="text"
                 placeholder="Search by city name…"
                 class="input input-bordered"
               />
-              <button class="btn btn-square">
+              <button id="search-btn" class="btn btn-square">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   class="h-6 w-6"
